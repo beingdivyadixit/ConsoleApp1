@@ -8,15 +8,34 @@ namespace ConsoleApp1
 {
     internal class calculator
     {
-       public int AddTwoNumbers(int firstNumber,int secondNumber)
-        {   
-            int result=firstNumber + secondNumber;
-            Console.WriteLine("Sum Of Two Numbers {0} ",result);
-            int result2 = firstNumber - secondNumber;
-            Console.WriteLine("diff of two Number{0}" ,result2);
-            int result3 = firstNumber * secondNumber;
-            Console.WriteLine("multipication of two Number{0}", result3);
-            return result;
+        public static void AddTwoNumbers(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber + secondNumber;
+            Console.WriteLine("Sum Of Two Numbers {0} ", result);
+           // return result;
         }
-   }
+
+        public static void MulTwoNumbers(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber * secondNumber;
+            Console.WriteLine("multipication of two Number{0}", result);
+          //  return result;
+        }
+
+
+
+        public static void SubTwoNumbers(int firstNumber, int secondNumber)
+        {
+            int result = firstNumber - secondNumber;
+            Console.WriteLine("Sub Of Two Numbers {0} ", result);
+         //   return result;
+        }
+        public static void DivTwoNumbers(int firstNumber, int secondNumber)
+        {
+            float result = (float)firstNumber / (float)secondNumber;
+            Console.WriteLine("Div Of Two Numbers" + result);
+            //   return result;
+        }
+    }
+
 }
